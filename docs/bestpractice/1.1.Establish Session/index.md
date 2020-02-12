@@ -57,8 +57,8 @@ Details are shown in Table 1.
 Currently, the launch of SDL App is an SDL standard behavior.
 However, the SDL Standard Specification lacks definition for the following points:
 <ol>
-  1 SDL App launching sequence of App side (especially RPC communication sequence) is not defined.<br>
-  2 The launch sequence for normal type SDL App is defined, while the launch sequence for MEDIA Type and NAVIGATION/PROJECTION Type are not.<br>
+  (1) SDL App launching sequence of App side (especially RPC communication sequence) is not defined.<br>
+  (2) The launch sequence for normal type SDL App is defined, while the launch sequence for MEDIA Type and NAVIGATION/PROJECTION Type are not.<br>
 </ol>
 Therefore, a misunderstanding might occur between App developers and HMI developers.
 The purpose of this document is to clarify the launch sequence of SDL Apps in order to be able to contribute to the SDL Ecosystem.
@@ -124,7 +124,7 @@ The three types of launch sequence are described based on the SDL App launch seq
   (1) Normal type App launch sequence (Figure2)<br>
   (2) MEDIA type App launch sequence (Figure3)<br>
   (3) NAVIGATION / PROJECTION type App launch sequence (Figure4)<br>
-
+</ol>
 Additional sequence is added in the red frame of Figure1 for each App type.	
 Parts other than the red frame are common to/shared by all App type, and there are no lack in the sequences.	
 	
