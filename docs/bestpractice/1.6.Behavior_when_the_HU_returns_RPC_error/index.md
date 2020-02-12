@@ -25,14 +25,14 @@ The HMI receives the notification and displays an error message.
 
 ![Figure2_sequence_of_SDLApp_for_Android_terminates_unexpectedly_01.png](./assets/Figure2_sequence_of_SDLApp_for_Android_terminates_unexpectedly_01.png)<br>
 <b>Figure2</b> When a running SDL App on mobile terminates unexpectedly and the RouterService is running.<br>
-
+<br>
 
 2. If the RouterService on mobile has been terminated unexpectedly, the SDLCore detects the disconnection and sends RPC"UnregisterAppInterface" to the HMI.
 The HMI receives the notification and displays an error message.
 
-![Figure3_sequence_of_SDLApp_for_Android_terminates_unexpectedly_02.png](./assets/Figure2_sequence_of_SDLApp_for_Android_terminates_unexpectedly_02.png)<br>
-<b>Figure2</b> When the RouterService on mobile terminates unexpectedly<br>
-
+![Figure3_sequence_of_SDLApp_for_Android_terminates_unexpectedly_02.png](./assets/Figure3_sequence_of_SDLApp_for_Android_terminates_unexpectedly_02.png)<br>
+<b>Figure3</b> When the RouterService on mobile terminates unexpectedly<br>
+<br>
 
 ## 4. Impacted Platforms
 There is no impact on any Platforms.
