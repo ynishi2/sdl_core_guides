@@ -38,7 +38,7 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 \*1 The display of the Audio source selction screen during 1 and 2, is specified by the OEMs.<br>
 \*2 Refer to “1.1.Session establishment” for the SDL App launch sequence.<br>
 
-![Figure1_The_launch_of_SDLApp_by_choosing_the Audio source.png](./assets/Figure1_The_launch_of_SDLApp_by_choosing_the Audio source.png)
+![Figure1_The_launch_of_SDLApp_by_choosing_the Audio source.png](./assets/Figure1_The_launch_of_SDLApp_by_choosing_the Audio source.png)<br>
 <b>Figure1 </b> The launch of SDL App by choosing the Audio source on the Audio screen
 
 ## 5. Sequence Diagrams
