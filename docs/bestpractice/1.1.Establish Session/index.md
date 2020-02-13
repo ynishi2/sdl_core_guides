@@ -133,15 +133,18 @@ The sequence described in the red part refers to the RPC communication sequence;
 
 ![Figure2_Normal_type_App_launch_sequence.png](./assets/Figure2_Normal_type_App_launch_sequence.png)
 <b>Figure2</b> Normal type App launch sequence
-
+<br>
+<br>
 
 ![Figure3_MEDIA_type_App_launch_sequence.png](./assets/Figure3_MEDIA_type_App_launch_sequence.png)
 <b>Figure3</b> MEDIA type App launch sequence
-
+<br>
+<br>
 
 ![Figure4_NAVIGATION-PROJECTION_type_App_launch_sequence.png](./assets/Figure4_NAVIGATION-PROJECTION_type_App_launch_sequence.png)
-<b>Figure.4. NAVIGATION / PROJECTION type App launch sequence</b>
-
+<b>Figure.4</b> NAVIGATION / PROJECTION type App launch sequence
+<br>
+<br>
 
 ## 6. Impacted Platforms
 Changes only affects the SDLC Guideline documents.
