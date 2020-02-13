@@ -35,8 +35,8 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
 2. The Audio source selection screen is displayed.
 3. The user presses the SDL App icon on the Audio source seclection screen.
 4. Then, the HMI will start the SDL App launch sequence.<br>
-\*1 The display of the Audio source selction screen during 1 and 2, is specified by the OEMs.<br>
-\*2 Refer to “1.1.Session establishment” for the SDL App launch sequence.<br>
+ *1 The display of the Audio source selction screen during 1 and 2, is specified by the OEMs.<br>
+ *2 Refer to “1.1.Session establishment” for the SDL App launch sequence.<br>
 
 ![Figure1_launch_of_SDLApp_by_choosing_the Audio source.png](./assets/Figure1_launch_of_SDLApp_by_choosing_the Audio source.png)
 <b>Figure1 </b> The launch of SDL App by choosing the Audio source on the Audio screen
