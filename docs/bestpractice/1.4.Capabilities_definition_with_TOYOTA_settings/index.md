@@ -227,18 +227,18 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <td>TRUE</td>
     <td>-</td>
     <td align="left" rowspan="4">
-       {"name": "PRESET_0",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_1",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_2",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_3",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_4",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_5",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_6",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_7",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_8",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PRESET_9",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
-       {"name": "PLAY_PAUSE",  "shortPressAvailable": true,  "longPressAvailable" :true,  "upDownAvailable": false},
-       {"name": "SEEKLEFT",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},
+       {"name": "PRESET_0",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_1",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_2",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_3",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_4",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_5",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_6",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_7",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_8",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PRESET_9",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
+       {"name": "PLAY_PAUSE",  "shortPressAvailable": true,  "longPressAvailable" :true,  "upDownAvailable": false},<br>
+       {"name": "SEEKLEFT",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
        {"name": "SEEKRIGHT",   "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false}
     </td>
     <td align="left">-</td>
