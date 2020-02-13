@@ -40,7 +40,7 @@ Therefore, all of the contents describe in "3. Function Details" differ from the
  
  aaa
 
-![Figure1_launch_of_SDLApp_by_choosing_the Audio source.png](./assets/Figure1_launch_of_SDLApp_by_choosing_the Audio source.png)
+![Figure1_launch_of_SDLApp_by_choosing_the Audio source.png](./assets/Figure1_launch_of_SDLApp_by_choosing_the Audio source.png)<br>
 <b>Figure1 </b> The launch of SDL App by choosing the Audio source on the Audio screen
 
 ## 5. Sequence Diagrams
