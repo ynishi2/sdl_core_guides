@@ -1,7 +1,4 @@
-# Appendix.Appendix. Definition of terms
-
-## Definition of terms
-
+# Appendix. Definition of terms
 
 | Term          | Description |
 | :-:           | ---         |
@@ -21,7 +18,7 @@
 | HMI Level     |Operating status for each App by HMI.<br>It indicates the status for each App operated by the HMI.|
 | HU            |Abbreviation for Head Unit.|
 | Mobile        |It refers to Mobile device terminals such as smartphones connected to the HU.|
-| Native        |Implementation parts by Tier1. For example Embedded Navi, Embedded Audio, etc.|
+| Native        |Implementation parts by Tier1.<br>For example Embedded Navi, Embedded Audio, etc.|
 | PolicyTable   |A Json format file consisting of rules and permissions defined by OEM.|
 | Policy Server |It manages the SDL PolicyTable and state.|
 | PTT           |Abbreviation for Push To Talk.<br>It is used to activate Voice Recognition and to answer incoming calls.|
