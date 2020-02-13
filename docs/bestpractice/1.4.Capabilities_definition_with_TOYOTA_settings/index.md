@@ -226,7 +226,7 @@ The definition of "ButtonCapabilities" and the setting example of TOYOTA are des
     <td>Common.ButtonName</td>
     <td>TRUE</td>
     <td>-</td>
-    <td align="left" rowspan="4">
+    <td align="left" rowspan="4 width="800">
        {"name": "PRESET_0",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
        {"name": "PRESET_1",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
        {"name": "PRESET_2",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
