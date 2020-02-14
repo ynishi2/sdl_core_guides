@@ -32,7 +32,7 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
     <th>TYPE</th>
     <th>MANDATORY</th>
     <th>ADDITIONAL</th>
-    <th>TOYOTA Setting</th>
+    <th width="1000">TOYOTA Setting</th>
     <th>DESCRIPTION</th>
   </tr>
   <tr align="center">
@@ -41,7 +41,7 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
     <td>Common.ButtonName</td>
     <td>TRUE</td>
     <td>-</td>
-    <td align="left" rowspan="4" width="1000">
+    <td align="left" rowspan="4">
        {"name": "PRESET_0",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
        {"name": "PRESET_1",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
        {"name": "PRESET_2",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
