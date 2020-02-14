@@ -53,7 +53,7 @@ The definition of "DisplayCapabilities" and the setting example of TOYOTA are de
     </td>
     <td align="left">-</td>
   </tr>
-</tabl
+</table>
 
 
 
