@@ -7,53 +7,19 @@ Below is the definition of the existing SDL standard specifications and the sett
 ### 2.1. DisplayCapabilities
 The definition of "DisplayCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME               | TYPE  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
-|:-: | :-:                | :-:   | :-:       | :-:        |--------------|-----------|
-|1|displayType|Common.DisplayType|TRUE|-|-|SDL_GENERIC|-|
-|2|displayName|String|TRUE||GENERIC_DISPLAY|The name of the display the app is connected to.|
-|3|textFields |Common.TextField|TRUE|array: true<br>minsize: 0<br>maxsize: 100|{"name": "mainField1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField4",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "statusBar",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaClock",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaTrack",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "scrollableMessageBody",     "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "initialInteractionText",    "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText1",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText2",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "ETA",                       "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "totalDistance",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText",            "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText1", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText2", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderHeader",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderFooter",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "notificationText",          "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuName",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "secondaryText",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "tertiaryText",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "timeToDestination",         "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "turnText",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuTitle",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "phoneNumber",               "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "addressLines",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationDescription"      , "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationName",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1}|-|
-|4|imageFields|Common.ImageField|FALSE|array: true<br>minsize: 1<br>maxsize: 100|{"name": "softButtonImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 56, "resolutionHeight": 56 }},<br>{"name": "choiceImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "choiceSecondaryImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "menuIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "cmdIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "appIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 70, "resolutionHeight": 70 }},<br>{"name": "graphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }},<br>{"name": "secondaryGraphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }}|-|
-|5|mediaClockFormats|Common.MediaClockFormat|TRUE|array: true<br>minsize: 0<br>maxsize: 100|"CLOCK1", "CLOCK2", "CLOCK3", "CLOCKTEXT1", "CLOCKTEXT2", "CLOCKTEXT3", "CLOCKTEXT4"|-|
-|6|imageCapabilities|Common.ImageType|FALSE|array: true<br>minsize: 0<br>maxsize: 2|DYNAMIC|-|
-|7|graphicSupported|Boolean|TRUE||TRUE|-|
-|8|templatesAvailable|String|TRUE|array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"<br>|-|
-|9|screenParams|Common.ScreenParams|FALSE||"resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false|-|
+| No | NAME               | TYPE                   | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
+|:-: | :-:                | :-:                    | :-:       | :-:        |--------------|-----------|
+|1   |displayType         |Common.DisplayType      |TRUE       |-           |SDL_GENERIC   |-|
+|2   |displayName         |String                  |TRUE       |-           |GENERIC_DISPLAY|The name of the display the app is connected to.|
+|3   |textFields          |Common.TextField        |TRUE       |array: true<br>minsize: 0<br>maxsize: 100|{"name": "mainField1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField4",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "statusBar",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaClock",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaTrack",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "scrollableMessageBody",     "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "initialInteractionText",    "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText1",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText2",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "ETA",                       "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "totalDistance",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText",            "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText1", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText2", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderHeader",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderFooter",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "notificationText",          "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuName",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "secondaryText",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "tertiaryText",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "timeToDestination",         "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "turnText",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuTitle",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "phoneNumber",               "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "addressLines",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationDescription"      , "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationName",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1}|-|
+|4   |imageFields         |Common.ImageField       |FALSE      |array: true<br>minsize: 1<br>maxsize: 100|{"name": "softButtonImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 56, "resolutionHeight": 56 }},<br>{"name": "choiceImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "choiceSecondaryImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "menuIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "cmdIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "appIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 70, "resolutionHeight": 70 }},<br>{"name": "graphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }},<br>{"name": "secondaryGraphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }}|-|
+|5   |mediaClockFormats   |Common.MediaClockFormat |TRUE       |array: true<br>minsize: 0<br>maxsize: 100|"CLOCK1", "CLOCK2", "CLOCK3", "CLOCKTEXT1", "CLOCKTEXT2", "CLOCKTEXT3", "CLOCKTEXT4"|-|
+|6   |imageCapabilities   |Common.ImageType        |FALSE      |array: true<br>minsize: 0<br>maxsize: 2|DYNAMIC|-|
+|7   |graphicSupported    |Boolean                 |TRUE       |-           |TRUE          |-|
+|8   |templatesAvailable  |String                  |TRUE       |array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"<br>|-|
+|9   |screenParams        |Common.ScreenParams     |FALSE      |-           |resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false|-|
+|10  |numCustomPresetsAvailable |Integer    |FALSE      |minvalue: 1<br>maxvalue: 100| 10      |-|
 <br>
-
-<table>
-  <tr>
-    <th>No</th>
-    <th>NAME</th>
-    <th>TYPE</th>
-    <th>MANDATORY</th>
-    <th>ADDITIONAL</th>
-    <th>TOYOTA Setting</th>
-    <th>DESCRIPTION</th>
-  </tr>
-  <tr align="center">
-    <td>1</td>
-    <td>name</td>
-    <td>Common.ButtonName</td>
-    <td>TRUE</td>
-    <td>-</td>
-    <td align="left" rowspan="4">
-       {"name": "PRESET_0",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_1",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_2",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_3",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_4",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_5",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_6",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_7",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_8",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_9",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PLAY_PAUSE",  "shortPressAvailable": true,  "longPressAvailable" :true,  "upDownAvailable": false},<br>
-       {"name": "SEEKLEFT",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "SEEKRIGHT",   "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false}
-    </td>
-    <td align="left">-</td>
-  </tr>
-</tabl
 
 
 
@@ -160,7 +126,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 |3   |fanSpeedAvailable            |Boolean           |FALSE      | -          |TRUE          |Availability of the control of fan speed<br>True: Available, False: Not Available, Not present: Not Available. |
 |4   |currentTemperatureAvailable  |Boolean           |FALSE      | -          |TRUE          |Availability of the reading of current temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
 |5   |desiredTemperatureAvailable  |Boolean           |FALSE      | -          |TRUE          |Availability of the control of desired temperature.<br>True: Available, False: Not Available, Not present: Not Available.|
-|6   |acEnableAvailable            |Boolean           |FALSE      | -          |TRUE          |Availability of the control of turn on/off AC.<bf>True: Available, False: Not Available, Not present: Not Available.|
+|6   |acEnableAvailable            |Boolean           |FALSE      | -          |TRUE          |Availability of the control of turn on/off AC.<br>True: Available, False: Not Available, Not present: Not Available.|
 |7   |acMaxEnableAvailable         |Boolean           |FALSE      | -          |TRUE          |Availability of the control of enable/disable air conditioning is ON on the maximum level.<br>True: Available, False: Not Available, Not present: Not Available.|
 |8   |circulateAirEnableAvailable  |Boolean           |FALSE      | -          |FALSE         |Availability of the control of enable/disable circulate Air mode.<br>True: Available, False: Not Available, Not present: Not Available.|
 |9   |autoModeEnableAvailable      |Boolean           |FALSE      | -          |TRUE          |Availability of the control of enable/disable auto mode.<br>True: Available, False: Not Available, Not present: Not Available.|
@@ -202,7 +168,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 | No | NAME                                  | TYPE             | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:                                   | :-:              | :-:       | :-:            |--------------|-----------|
 |1   |moduleName                             |String            |TRUE       |maxlength="100" |driver_seat   |The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
-|2   |moduleInfo                             |Common.ModuleInfo |FALSE      | -              |N/A           | - |
+|2   |moduleInfo                             |Common.ModuleInfo |FALSE      | -              |N/A           | Information about a RC module, including its id.|
 |3   |heatingEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
 |4   |coolingEnabledAvailable                |Boolean           |FALSE      | -              |FALSE         | - |
 |5   |heatingLevelAvailable                  |Boolean           |FALSE      | -              |FALSE         | - |
@@ -245,15 +211,7 @@ The TOYOTA setting of Capability existing in the setting is described in (4) -1 
 <br>
 
 ### 2.7. ButtonCapabilities
-
 The definition of "ButtonCapabilities" and the setting example of TOYOTA are described below.
-| No | NAME                    | TYPE             | MANDATORY | ADDITIONAL      |TOYOTA Setting|DESCRIPTION|
-|:-: | :-:                     | :-:              | :-:       | :-:             |--------------|-----------|
-|1   |moduleName               |String            |TRUE       |maxlength="100"  |hmiSettings   |           |
-|1   |moduleName               |String            |TRUE       |maxlength="100"  |hmiSettings   |           |
-|1   |moduleName               |String            |TRUE       |maxlength="100"  |hmiSettings   |           |
-|1   |moduleName               |String            |TRUE       |maxlength="100"  | ^            |           |
-|1   |moduleName               |String            |TRUE       |maxlength="100"  | ^            |           |
 
 <table>
   <tr>
@@ -336,7 +294,7 @@ The definition of "LightControlCapabilities" and the setting example of TOYOTA a
 
 | No | NAME           | TYPE                    | MANDATORY | ADDITIONAL     |TOYOTA Setting|DESCRIPTION|
 |:-: | :-:            | :-:                     | :-:       | :-:            |--------------|-----------|
-|1   |moduleName      |                         |TRUE       |maxlength="100" |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
+|1   |moduleName      | String                  |TRUE       |maxlength="100" |N/A           | The short friendly name of the light control module.<br>It should not be used to identify a module by mobile application.|
 |2   |moduleInfo      |Common.ModuleInfo        |FALSE      | -              |N/A           | Information about a RC module, including its id.|
 |3   |supportedLights |Common.LightCapabilities |TRUE       |minsize="1"<br>maxsize="100"<br>array="true" |N/A           |An array of available LightCapabilities that are controllable. |
 <br>
@@ -348,18 +306,18 @@ The definition of "LightCapabilities" and the setting example of TOYOTA are desc
 |:-: | :-:                   | :-:             | :-:       | :-:        |--------------|-----------|
 |1   |name                   |Common.LightName |TRUE       | -          |N/A           | -         |
 |2   |statusAvailable        |Boolean          |FALSE      | -          |N/A           |Indicates if the status (ON/OFF) can be set remotely. App shall not use read-only values (RAMP_UP/RAMP_DOWN/UNKNOWN/INVALID) in a setInteriorVehicleData request.|
-|1   |moduleName             |Boolean          |FALSE      | -          |N/A           |Indicates if the light's density can be set remotely (similar to a dimmer).|
-|1   |rgbColorSpaceAvailable |Boolean          |FALSE      | -          |N/A           |Indicates if the light's color can be set remotely by using the sRGB color space.|
+|3   |densityAvailable       |Boolean          |FALSE      | -          |N/A           |Indicates if the light's density can be set remotely (similar to a dimmer).|
+|4   |rgbColorSpaceAvailable |Boolean          |FALSE      | -          |N/A           |Indicates if the light's color can be set remotely by using the sRGB color space.|
 <br>
 
 ### 2.11. HMICapabilities
 The definition of "HMICapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME      | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
-|:-: | :-:       | :-:    | :-:       | :-:        |--------------|-----------|
-|1   |navigation |Boolean |FALSE      | -          |N/A           |Availability of build in Nav. True: Available, False: Not Available|
-|2   |phoneCall  |Boolean |FALSE      | -          |N/A           |Availability of build in phone. True: Available, False: Not Available|
-|3   |phoneCall  |Boolean |FALSE      | -          |N/A           |Availability of built-in video streaming. True: Available, False: Not Available|
+| No | NAME          | TYPE   | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
+|:-: | :-:           | :-:    | :-:       | :-:        |--------------|-----------|
+|1   |navigation     |Boolean |FALSE      | -          |N/A           |Availability of build in Nav. True: Available, False: Not Available|
+|2   |phoneCall      |Boolean |FALSE      | -          |N/A           |Availability of build in phone. True: Available, False: Not Available|
+|3   |videoStreaming |Boolean |FALSE      | -          |N/A           |Availability of built-in video streaming. True: Available, False: Not Available|
 <br>
 
 ### 2.12. DisplayCapability
@@ -422,7 +380,4 @@ The definition of "SeatLocationCapability" and the setting example of TOYOTA are
 |1   |rows    |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |Contains information about the locations of each seat.|
 |2   |columns |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100 |N/A           |Contains information about the locations of each seat.|
 |3   |levels  |Integer             |FALSE      |minvalue: 1<br>maxvalue: 100<br>defvalue:1|N/A           |Contains information about the locations of each seat.|
-|4   |seats   |Common.SeatLocation |FALSE      | -          |N/A           |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat|
-
-
-![.png](./assets/table1.png)<br>
+|4   |seats   |Common.SeatLocation |FALSE      |array: true |N/A           |Contains a list of SeatLocation in the vehicle, the first element is the driver's seat|
