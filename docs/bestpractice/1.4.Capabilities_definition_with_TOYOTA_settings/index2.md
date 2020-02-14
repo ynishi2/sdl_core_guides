@@ -7,58 +7,30 @@ Below is the definition of the existing SDL standard specifications and the sett
 ### 2.1. DisplayCapabilities
 The definition of "DisplayCapabilities" and the setting example of TOYOTA are described below.
 
-| No | NAME               | TYPE  | MANDATORY | ADDITIONAL |TOYOTA Setting|DESCRIPTION|
-|:-: | :-:                | :-:   | :-:       | :-:        |--------------|-----------|
-|1|displayType|Common.DisplayType|TRUE|	-|SDL_GENERIC|-|
-|2|displayName|String|TRUE||GENERIC_DISPLAY|The name of the display the app is connected to.|
-|3|textFields |Common.TextField|TRUE|array: true<br>minsize: 0<br>maxsize: 100|{"name": "mainField1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField4",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "statusBar",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaClock",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaTrack",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "scrollableMessageBody",     "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "initialInteractionText",    "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText1",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText2",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "ETA",                       "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "totalDistance",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText",            "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText1", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText2", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderHeader",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderFooter",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "notificationText",          "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuName",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "secondaryText",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "tertiaryText",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "timeToDestination",         "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "turnText",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuTitle",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "phoneNumber",               "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "addressLines",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationDescription"      , "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationName",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1}|-|
-|4|imageFields|Common.ImageField|FALSE|array: true<br>minsize: 1<br>maxsize: 100|{"name": "softButtonImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 56, "resolutionHeight": 56 }},<br>{"name": "choiceImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "choiceSecondaryImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "menuIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "cmdIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "appIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 70, "resolutionHeight": 70 }},<br>{"name": "graphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }},<br>{"name": "secondaryGraphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }}|-|
-|5|mediaClockFormats|Common.MediaClockFormat|TRUE|array: true<br>minsize: 0<br>maxsize: 100|"CLOCK1", "CLOCK2", "CLOCK3", "CLOCKTEXT1", "CLOCKTEXT2", "CLOCKTEXT3", "CLOCKTEXT4"|-|
-|6|imageCapabilities|Common.ImageType|FALSE|array: true<br>minsize: 0<br>maxsize: 2|DYNAMIC|-|
-|7|graphicSupported|Boolean|TRUE||TRUE|-|
-|8|templatesAvailable|String|TRUE|array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"<br>|-|
-|9|screenParams|Common.ScreenParams|FALSE||"resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false|-|
+| No | NAME               | TYPE  | MANDATORY | ADDITIONAL |DESCRIPTION|
+|:-: | :-:                | :-:   | :-:       | :-:        |-----------|
+|1|displayType|Common.DisplayType|TRUE|	-|-|
+|2|displayName|String|TRUE|-|The name of the display the app is connected to.|
+|3|textFields |Common.TextField|TRUE|array: true<br>minsize: 0<br>maxsize: 100|-|
+|4|imageFields|Common.ImageField|FALSE|array: true<br>minsize: 1<br>maxsize: 100|-|
+|5|mediaClockFormats|Common.MediaClockFormat|TRUE|array: true<br>minsize: 0<br>maxsize: 100|-|
+|6|imageCapabilities|Common.ImageType|FALSE|array: true<br>minsize: 0<br>maxsize: 2|-|
+|7|graphicSupported|Boolean|TRUE||-|
+|8|templatesAvailable|String|TRUE|array: true<br>minsize: 0<br>maxsize: 100<br>maxlength: 100|-|
+|9|screenParams|Common.ScreenParams|FALSE|-|-|
 <br>
 
-| No | NAME      | TYPE  | MANDATORY | ADDITIONAL |TOYOTA Setting |DESCRIPTION|
-|:-: | :-:       | :-:   | :-:       | :-:        |-------------- |-----------|
-| 1  |displayType|aaaa   |TRUE       |-           |SDL_GENERIC    |-          |
-| 2  |displayName|String |TRUE       |            |GENERIC_DISPLAY|^|
-
-<table>
-  <tr>
-    <th>No</th>
-    <th>NAME</th>
-    <th>TYPE</th>
-    <th>MANDATORY</th>
-    <th>ADDITIONAL</th>
-    <th width="1000">TOYOTA Setting</th>
-    <th>DESCRIPTION</th>
-  </tr>
-  <tr align="center">
-    <td>1</td>
-    <td>name</td>
-    <td>Common.ButtonName</td>
-    <td>TRUE</td>
-    <td>-</td>
-    <td align="left" rowspan="4">
-       {"name": "PRESET_0",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_1",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_2",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_3",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_4",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_5",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_6",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_7",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_8",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PRESET_9",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "PLAY_PAUSE",  "shortPressAvailable": true,  "longPressAvailable" :true,  "upDownAvailable": false},<br>
-       {"name": "SEEKLEFT",    "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false},<br>
-       {"name": "SEEKRIGHT",   "shortPressAvailable": true,  "longPressAvailable": true,  "upDownAvailable": false}
-    </td>
-    <td align="left">-</td>
-  </tr>
-</table>
+| No | NAME               | TOYOTA Setting  |
+|:-: | :-:                | :-:             |
+| 1  |displayType         |SDL_GENERIC|
+| 2  |displayName         |GENERIC_DISPLAY  |
+| 3  |textFields          |{"name": "mainField1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mainField4",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "statusBar",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaClock",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "mediaTrack",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText1",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText2",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "alertText3",                "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "scrollableMessageBody",     "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "initialInteractionText",    "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText1",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText2",           "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "ETA",                       "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "totalDistance",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "navigationText",            "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText1", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "audioPassThruDisplayText2", "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderHeader",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "sliderFooter",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "notificationText",          "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuName",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "secondaryText",             "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "tertiaryText",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "timeToDestination",         "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "turnText",                  "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "menuTitle",                 "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "phoneNumber",               "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "addressLines",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationDescription"      , "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1},<br>{"name": "locationName",              "characterSet":  "TYPE2SET",  "width": 500,  "rows": 1}|
+| 4  |imageFields         |{"name": "softButtonImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 56, "resolutionHeight": 56 }},<br>{"name": "choiceImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "choiceSecondaryImage",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "menuIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "cmdIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 75, "resolutionHeight": 75 }},<br>{"name": "appIcon",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 70, "resolutionHeight": 70 }},<br>{"name": "graphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }},<br>{"name": "secondaryGraphic",<br> "imageTypeSupported": ["GRAPHIC_BMP", "GRAPHIC_JPEG", "GRAPHIC_PNG"],<br> "imageResolution": { "resolutionWidth": 373, "resolutionHeight": 373 }}|
+| 5  |mediaClockFormats   |"CLOCK1", "CLOCK2", "CLOCK3", "CLOCKTEXT1", "CLOCKTEXT2", "CLOCKTEXT3", "CLOCKTEXT4"|
+| 6  |imageCapabilities   |DYNAMIC|
+| 7  |graphicSupported    |TRUE|
+| 8  |templatesAvailable  |"DEFAULT", "MEDIA", "NON-MEDIA", "ONSCREEN_PRESETS", "GRAPHIC_WITH_TEXT", "TEXT_WITH_GRAPHIC", "TILES_ONLY", "TEXTBUTTONS_ONLY", "GRAPHIC_WITH_TILES", "TILES_WITH_GRAPHIC", "GRAPHIC_WITH_TEXT_AND_SOFTBUTTONS","TEXT_AND_SOFTBUTTONS_WITH_GRAPHIC", "GRAPHIC_WITH_TEXTBUTTONS", "TEXTBUTTONS_WITH_GRAPHIC", "LARGE_GRAPHIC_WITH_SOFTBUTTONS", "DOUBLE_GRAPHIC_WITH_SOFTBUTTONS", "LARGE_GRAPHIC_ONLY"<br>|
+| 9  |screenParams        |"resolution": {<br>    "resolutionWidth": 1163,<br>    "resolutionHeight": 720<br>},<br>"touchEventAvailable": {<br>    "pressAvailable": true,<br>    "multiTouchAvailable": false,<br>    "doublePressAvailable": false|
 
 
 
